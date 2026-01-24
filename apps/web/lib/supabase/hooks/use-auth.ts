@@ -8,7 +8,7 @@ export function useAuth() {
   const [user, setUser] = useState<User | null>(null)
 
   useAuthChangeListener({
-    appHomePath: '/home', // Change this to your actual home path
+    appHomePath: '/home',
     onEvent: (event, session) => {
       if (event === 'SIGNED_IN') {
         setUser(session?.user ?? null)
