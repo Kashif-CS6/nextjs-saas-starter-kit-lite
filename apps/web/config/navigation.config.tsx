@@ -1,4 +1,4 @@
-import { Home, User } from 'lucide-react';
+import { Box, Home, Pen, PenBox, User } from 'lucide-react';
 import { z } from 'zod';
 
 import { NavigationConfigSchema } from '@kit/ui/navigation-schema';
@@ -17,6 +17,23 @@ const routes = [
         Icon: <Home className={iconClasses} />,
         end: true,
       },
+    ],
+  },
+  {
+    label: 'common:routes.blog',
+    children: [
+      {
+        label: 'common:routes.blog',
+        path: pathsConfig.app.blog,
+        Icon: <Box className={iconClasses} />,
+        end: true,
+      },
+       {
+        label: 'Create Blog',
+        path: pathsConfig.app.create,
+        Icon: <PenBox className={iconClasses} />,
+        end: true,
+      }
     ],
   },
   {

@@ -31,6 +31,7 @@
     "supabase:db:dump:local": "supabase db dump --local --data-only"
   },
   "dependencies": {
+    "@apollo/client": "^4.1.2",
     "@edge-csrf/nextjs": "2.5.3-cloudflare-rc1",
     "@hookform/resolvers": "^5.2.2",
     "@kit/accounts": "workspace:*",
@@ -47,6 +48,7 @@
     "@tanstack/react-query": "5.90.2",
     "@tanstack/react-table": "^8.21.3",
     "date-fns": "^4.1.0",
+    "graphql": "^16.12.0",
     "lucide-react": "^0.545.0",
     "next": "15.5.9",
     "next-sitemap": "^4.2.3",

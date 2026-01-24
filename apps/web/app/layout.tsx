@@ -7,6 +7,7 @@ import { RootProviders } from '~/components/root-providers';
 import { heading, sans } from '~/lib/fonts';
 import { createI18nServerInstance } from '~/lib/i18n/i18n.server';
 import { generateRootMetadata } from '~/lib/root-metdata';
+import { ApolloProvider } from '../components/providers/ApolloProvider'
 
 import '../styles/globals.css';
 
@@ -22,9 +23,11 @@ export default async function RootLayout({
   return (
     <html lang={language} className={className}>
       <body>
+        <ApolloProvider>
         <RootProviders theme={theme} lang={language}>
           {children}
         </RootProviders>
+        </ApolloProvider>
 
         <Toaster richColors={true} theme={theme} position="top-center" />
       </body>

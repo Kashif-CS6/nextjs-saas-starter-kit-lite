@@ -1,0 +1,1 @@
+comment on table blog_posts is e'@graphql';
